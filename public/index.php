@@ -42,8 +42,8 @@
             font-size: 30px;
         }
         .links li {
-            max-width: 33%;
-            width: 253.33px;
+            max-width: 25%;
+            width: 190px;
             float: left;
             text-align: center;
 
@@ -54,8 +54,8 @@
             text-decoration: none;
             border: 1px solid white;
             margin: 10px;
-            height: 200px;
-            line-height: 200px;
+            height: 150px;
+            line-height: 150px;
         }
         .links li a:hover {
             box-shadow: 0px 0px 5px #333;
@@ -83,6 +83,21 @@
             </li>
             <li>
                 <a href="http://github.com/wpninjas/ninja-forms">Github</a>
+            </li>
+        </ul>
+
+        <ul class="links">
+            <li>
+                <a href="http://php52.dev/">php52</a>
+            </li>
+            <li>
+                <a href="http://php53.dev/">php53</a>
+            </li>
+            <li>
+                <a href="http://php54.dev/">php54</a>
+            </li>
+            <li>
+                <a href="http://php55.dev/">php55</a>
             </li>
         </ul>
 
