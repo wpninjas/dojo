@@ -31,9 +31,15 @@
             width: 760px;
             margin: auto;
         }
+        h1,
+        h2 {
+            text-align: center;
+        }
         h1 {
             font-size: 60px;
-            text-align: center;
+        }
+        h2 {
+            font-size: 30px;
         }
         .links li {
             max-width: 33%;
@@ -51,12 +57,16 @@
             height: 200px;
             line-height: 200px;
         }
+        .links li a:hover {
+            box-shadow: 0px 0px 5px #333;
+        }
     </style>
 </head>
 <body>
 
     <header class="header wrapper">
         <h1>The Dojo</h1>
+        <h2><?php echo phpversion(); ?></h2>
     </header>
 
     <div class="wrapper">
