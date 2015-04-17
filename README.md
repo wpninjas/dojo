@@ -5,8 +5,8 @@
 1. Install both [VirtualBox](https://www.virtualbox.org/) and
    [Vagrant](http://www.vagrantup.com/).
 2. Clone this repository to a convenient location for your development:
-    * `git clone https://github.com/wpninjas/dojo.git`
-    * `cd wp-vagrant`
+    * `git clone https://github.com/wpninjas/dojo.git dojo`
+    * `cd dojo`
 3. Add the following to your hosts file:
     * `192.168.167.9  php52.dev`
     * `192.168.167.10 php53.dev`
