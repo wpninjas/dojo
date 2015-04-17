@@ -1,0 +1,11 @@
+# OS Stuff
+
+# Vagrant Stuff
+/.vagrant/
+
+# IDE Stuff
+.idea
+
+# Project Stuff
+/public/wp
+/public/wp-content/*
