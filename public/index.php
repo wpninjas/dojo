@@ -82,7 +82,7 @@
                 <a href="/phpinfo">phpInfo</a>
             </li>
             <li>
-                <a href="http://github.com/wpninjas/ninja-forms">Github</a>
+                <a href="http://github.com/wpninjas/dojo">Github</a>
             </li>
         </ul>
 
