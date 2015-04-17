@@ -8,4 +8,5 @@
 
 # Project Stuff
 /public/wp
-/public/wp-content/*
+/public/wp-content/plugins
+!/public/wp-content/plugins/.gitkeep
