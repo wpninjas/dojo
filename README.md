@@ -85,3 +85,8 @@ A single account with rights all databases for convenience:
 * MySQL 5.5.40
 * Subversion 1.8.8, Git 1.9.1
 * Node.js 0.10.33, Grunt
+
+### TODO
+
+1. Process for clearing the database
+1. MU-Plugin for suppressing the WordPress update nag
