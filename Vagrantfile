@@ -13,8 +13,6 @@ Vagrant.configure("2") do |config|
 
     config.vm.synced_folder "public/", "/var/www"
 
-    config.vm.provision "shell", path: "setup/wp.sh"
-
     node.vm.provider :virtualbox do |vb|
       vb.customize [
         'modifyvm', :id,
@@ -27,6 +25,8 @@ Vagrant.configure("2") do |config|
     node.vm.box = 'puppetlabs/ubuntu-12.04-64-puppet'
     node.vm.hostname = 'php53.dev'
     node.vm.network :private_network, ip: '192.168.167.10'
+
+    config.vm.synced_folder "public/", "/var/www"
 
     node.vm.provider :virtualbox do |vb|
       vb.customize [
@@ -48,6 +48,8 @@ Vagrant.configure("2") do |config|
     node.vm.hostname = 'php54.dev'
     node.vm.network :private_network, ip: '192.168.167.11'
 
+    config.vm.synced_folder "public/", "/var/www"
+
     node.vm.provider :virtualbox do |vb|
       vb.customize [
         'modifyvm', :id,
@@ -67,6 +69,8 @@ Vagrant.configure("2") do |config|
     node.vm.box = 'puppetlabs/ubuntu-14.04-64-puppet'
     node.vm.hostname = 'php55.dev'
     node.vm.network :private_network, ip: '192.168.167.12'
+
+    config.vm.synced_folder "public/", "/var/www"
 
     node.vm.provider :virtualbox do |vb|
       vb.customize [
