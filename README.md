@@ -16,6 +16,7 @@
     * Without naming a box, just the `php52` box will be started.
       Specify `php53`, `php54`, or `php55` to
       start up either one instead.
+5. Run `bash setup.sh` to clone WordPress and copy over the `wp-config.php`
 
 Note that Apache is configured to point to the `public/` directory.
 

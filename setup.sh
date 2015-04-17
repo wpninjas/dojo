@@ -4,5 +4,5 @@ then
     git clone https://github.com/WordPress/WordPress.git public/wp
 fi
 
-# Change to project
+# Copy over wp-config
 cp setup/wp-config.php public/wp/wp-config.php
