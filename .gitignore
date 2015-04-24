@@ -10,3 +10,4 @@
 /public/wp
 /public/wp-content/plugins
 !/public/wp-content/plugins/.gitkeep
+!/public/wp-content/mu-plugins/
