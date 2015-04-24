@@ -89,4 +89,4 @@ A single account with rights all databases for convenience:
 ### TODO
 
 1. Process for clearing the database
-1. MU-Plugin for suppressing the WordPress update nag
+1. Sync database tables between boxes
