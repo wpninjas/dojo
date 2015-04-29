@@ -4,6 +4,7 @@
 
 ### Install Prerequisites
 
+1. Install [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 1. Install [VirtualBox](https://www.virtualbox.org/).
 1. Install [Vagrant](http://www.vagrantup.com/).
    
