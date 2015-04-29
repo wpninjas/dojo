@@ -2,32 +2,58 @@
 
 ## Getting Started
 
-1. Install both [VirtualBox](https://www.virtualbox.org/) and
-   [Vagrant](http://www.vagrantup.com/).
-2. Clone this repository to a convenient location for your development:
-    * `git clone https://github.com/wpninjas/dojo.git dojo`
-    * `cd dojo`
-3. Add the following to your hosts file:
+### Install Prerequisites
+
+1. Install [VirtualBox](https://www.virtualbox.org/).
+1. Install [Vagrant](http://www.vagrantup.com/).
+   
+### Download the DOJO Repository
+
+* Browser Download
+    1. https://github.com/wpninjas/dojo/archive/master.zip
+    2.  Unzip `master.zip`
+* Command Line
+    1. `git clone https://github.com/wpninjas/dojo.git dojo`
+    2. `cd dojo`
+    
+### Start the Box
+
+4. Using the Command Line, navigate to the folder and run the following command:
+    * `vagrant up [box]`
+    * Note: Without naming a box, just the `php52` box will be started.
+      Specify `php53`, `php54`, or `php55` to start up either one instead.
+      
+### Update your host file
+
+1. Add the following to your hosts file:
     * `192.168.167.9  php52.dev`
     * `192.168.167.10 php53.dev`
     * `192.168.167.11 php54.dev`
     * `192.168.167.12 php55.dev`
-4. Start Vagrant: `vagrant up [box]`
-    * Without naming a box, just the `php52` box will be started.
-      Specify `php53`, `php54`, or `php55` to
-      start up either one instead.
-5. Run `bash setup.sh` to clone WordPress and copy over the `wp-config.php`
+    * Note: With the [Host Updater Plugin](https://github.com/cogitatio/vagrant-hostsupdater) installed, your host file will be updated automatically.
+      
+### WordPress Setup
+1. Using the Command Line, run:
+    * `bash setup.sh`
 
-Note that Apache is configured to point to the `public/` directory.
+This command will clone WordPress and copy over the `wp-config.php`
+
+## Using the DOJO Environment
+
+### Browser Access
 
 With any of the boxes started, you can reach them at these locations:
 
 * http://php52.dev/
+    * 192.168.167.9
 * http://php53.dev/
+    * 192.168.167.10
 * http://php54.dev/
+    * 192.168.167.11
 * http://php55.dev/
+    * 192.168.167.12
 
-## MySQL Configuration
+### MySQL Configuration
 
 The MySQL root password is "wordpress", and all boxes
 come with two pre-configured databases:
@@ -86,7 +112,7 @@ A single account with rights all databases for convenience:
 * Subversion 1.8.8, Git 1.9.1
 * Node.js 0.10.33, Grunt
 
-### TODO
+## TODO
 
 1. Process for clearing the database
 1. Sync database tables between boxes
