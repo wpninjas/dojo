@@ -5,4 +5,4 @@ then
 fi
 
 # Copy over wp-config
-cp setup/wp-config.php public/wp/wp-config.php
+cp lib/config/wp-config.php public/wp/wp-config.php
