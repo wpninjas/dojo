@@ -35,10 +35,10 @@ Vagrant.configure("2") do |config|
       ]
     end
 
-    node.vm.provision :shell, :path => "puppet/bootstrap.sh"
+    node.vm.provision :shell, :path => "lib/puppet/bootstrap.sh"
     node.vm.provision :puppet do |puppet|
       puppet.facter = { 'fqdn' => node.vm.hostname }
-      puppet.manifests_path = "puppet/manifests"
+      puppet.manifests_path = "lib/puppet/manifests"
       puppet.manifest_file  = "wordpress-php53.pp"
     end
   end
@@ -57,10 +57,10 @@ Vagrant.configure("2") do |config|
       ]
     end
 
-    node.vm.provision :shell, :path => "puppet/bootstrap.sh"
+    node.vm.provision :shell, :path => "lib/puppet/bootstrap.sh"
     node.vm.provision :puppet do |puppet|
       puppet.facter = { 'fqdn' => node.vm.hostname }
-      puppet.manifests_path = "puppet/manifests"
+      puppet.manifests_path = "lib/puppet/manifests"
       puppet.manifest_file  = "wordpress-php54.pp"
     end
   end
@@ -79,10 +79,10 @@ Vagrant.configure("2") do |config|
       ]
     end
 
-    node.vm.provision :shell, :path => "puppet/bootstrap.sh"
+    node.vm.provision :shell, :path => "lib/puppet/bootstrap.sh"
     node.vm.provision :puppet do |puppet|
       puppet.facter = { 'fqdn' => node.vm.hostname }
-      puppet.manifests_path = "puppet/manifests"
+      puppet.manifests_path = "lib/puppet/manifests"
       puppet.manifest_file  = "wordpress-php55.pp"
     end
   end
