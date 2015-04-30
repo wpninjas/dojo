@@ -45,23 +45,7 @@ class Dojo_Installer
             return false;
         }
 
-        $this->auto_signon();
-    }
-
-    function auto_signon()
-    {
-        $user = wp_signon( array(
-            'user_login' => $this->admin_user,
-            'user_password' => $this->admin_password,
-            'remember' => true
-        ), false );
-
-        if ( is_wp_error($user) ) {
-            return false;
-        }
-
-        wp_redirect( admin_url() );
-        exit;
+        return true;
     }
 
 }
