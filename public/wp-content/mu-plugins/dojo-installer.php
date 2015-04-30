@@ -24,7 +24,7 @@ class Dojo_Installer
 
     function install()
     {
-        if ( is_blog_installed() ) {
+        if ( is_blog_installed() || is_ajax() ) {
             return false;
         }
 
