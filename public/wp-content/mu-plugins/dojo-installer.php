@@ -50,4 +50,4 @@ class Dojo_Installer
 
 }
 
-new Dojo_Installer();
+//new Dojo_Installer();
