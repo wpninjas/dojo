@@ -2,7 +2,7 @@
 
 ♫ Welcome to the DOJO, We got PHP,
   We got all the versions you want
-  Vagrant is it's name ♫
+  Vagrant is its name ♫
 
 ## Getting Started
 
