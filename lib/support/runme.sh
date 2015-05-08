@@ -51,14 +51,14 @@ cd wordpress
 #copy file to parent dir
 cp -rf . ../public/wp
 
-#move back to parent dir
-cd ../public/wp
-
 #remove files from wordpress folder
 rm -R wordpress
 
+#move back to parent dir
+cd ../public/wp
+
 #create wp config
-cp wp-config-sample.php wp-config.php
+cp ../../lib/support/wp-config.php wp-config.php
 
 #set database details with perl find and replace
 perl -pi -e "s/database_name_here/$dbname/g" wp-config.php
