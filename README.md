@@ -4,34 +4,41 @@
 
 ### Install Prerequisites
 
-1. Install [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-1. Install [VirtualBox](https://www.virtualbox.org/).
-1. Install [Vagrant](http://www.vagrantup.com/).
+1. [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+1. [VirtualBox](https://www.virtualbox.org/).
+1. [Vagrant](http://www.vagrantup.com/).
+1. [GitHub SSH keys](https://help.github.com/articles/generating-ssh-keys/).
+
+### WP Ninjas Support Team
+
+Note: Running the installer file will automatically setup the vagrant box and install WordPress following team conventions.
+
+1. Download the [runme](https://raw.githubusercontent.com/wpninjas/dojo/master/lib/support/runme.sh) installer file.
    
 ### Download the DOJO Repository
 
-* Browser Download
-    1. https://github.com/wpninjas/dojo/archive/master.zip
-    2.  Unzip `master.zip`
-* Command Line
+* Using the Command Line, run the following commands:
     1. `git clone https://github.com/wpninjas/dojo.git dojo`
-    2. `cd dojo`
+    1.. `cd dojo`
     
 ### Start the Box
 
-4. Using the Command Line, navigate to the folder and run the following command:
+1. Using the Command Line, run the following commands:
     * `vagrant up [box]`
-    * Note: Without naming a box, just the `php52` box will be started.
-      Specify `php53`, `php54`, or `php55` to start up either one instead.
+
+Note: Without naming a box, just the `php52` box will be started.
+      Specify `php53`, `php54`, or `php55` (or `support`) to start up either one instead.
       
 ### Update your host file
+
+Note: With the [Host Updater Plugin](https://github.com/cogitatio/vagrant-hostsupdater) installed, your host file will be updated automatically.
 
 1. Add the following to your hosts file:
     * `192.168.167.9  php52.dev`
     * `192.168.167.10 php53.dev`
     * `192.168.167.11 php54.dev`
     * `192.168.167.12 php55.dev`
-    * Note: With the [Host Updater Plugin](https://github.com/cogitatio/vagrant-hostsupdater) installed, your host file will be updated automatically.
+    * `192.168.33.10  support`
       
 ### WordPress Setup
 1. Using the Command Line, run:
@@ -53,6 +60,8 @@ With any of the boxes started, you can reach them at these locations:
     * 192.168.167.11
 * http://php55.dev/
     * 192.168.167.12
+* (Support) http://dojo/
+    * 192.168.33.10
 
 ### MySQL Configuration
 
@@ -112,6 +121,10 @@ A single account with rights all databases for convenience:
 * MySQL 5.5.40
 * Subversion 1.8.8, Git 1.9.1
 * Node.js 0.10.33, Grunt
+
+***support***
+
+Support uses the pre-configured [ScotchBox](https://github.com/scotch-io/scotch-box) setup.
 
 ## TODO
 
