@@ -1,5 +1,9 @@
 # WP Ninjas DOJO
 
+♫ Welcome to the DOJO, We got PHP,
+  We got all the versions you want
+  Vagrant is it's name ♫
+
 ## Getting Started
 
 ### Install Prerequisites
