@@ -90,7 +90,7 @@ Vagrant.configure("2") do |config|
   config.vm.define 'support', autostart: false do |node|
     node.vm.box = "scotch/box"
     node.vm.network "private_network", ip: "192.168.33.10"
-    node.vm.hostname = "wp"
+    node.vm.hostname = "dojo"
     node.vm.synced_folder "public/", "/var/www/public/", :mount_options => ["dmode=777", "fmode=666"]
     node.vm.provision :shell, path: "lib/support/bootstrap.sh"
   end

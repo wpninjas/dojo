@@ -46,13 +46,13 @@ curl -O https://wordpress.org/latest.tar.gz
 tar -zxvf latest.tar.gz
 
 #change dir to wordpress
-
 cd wordpress
+
 #copy file to parent dir
-cp -rf . ..
+cp -rf . ../public/wp
 
 #move back to parent dir
-cd ..
+cd ../public/wp
 
 #remove files from wordpress folder
 rm -R wordpress
