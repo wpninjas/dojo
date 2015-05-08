@@ -70,6 +70,10 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', true);
 
+define('WP_PLUGIN_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content/plugins' );
+define('WP_PLUGIN_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content/plugins' );
+define('WPMU_PLUGIN_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content/mu-plugins');
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
