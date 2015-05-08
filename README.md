@@ -1,7 +1,7 @@
 # WP Ninjas DOJO
 
-♫ Welcome to the DOJO, We got PHP,
-  We got all the versions you want
+♫ Welcome to the DOJO, We got PHP /
+  We got all the versions you want, 
   Vagrant is its name ♫
 
 ## Getting Started
